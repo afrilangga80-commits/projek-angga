@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Form Lanjutan</title>
+</head>
+<body>
+    <form action="#" method="POST" autocomplete="on">
+
+        <fieldset>
+            <legend>Data Diri</legend>
+            <label for="text_name">Name lengkap:</label>
+            <input type="text" id="text_name" name="text_name" placeholder="Masukkan nama lengkap" required /><br />
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Masukkan email" required /><br />
+
+            <label for="password">Kata sandi:</label>
+            <input type="password" id="password" name="password" required /><br />
+
+            <label for="umur">Umur:</label>
+            <input type="number" id="umur" name="umur" min="0" max="120" step="1" required /><br />
+
+            <label for="tanggal_lahir">Tanggal lahir:</label>
+            <input type="date" id="tanggal_lahir" name="tanggal_lahir" required /><br />
+        </fieldset>
+
+        <fieldset>
+            <legend>Preferensi</legend>
+
+            <label for="time_favorit">Jam belajar favorit:</label>
+            <input type="time" id="time_favorit" name="time_favorit" required /><br />
+
+            <label for="date_janji">Jadwal janji belajar:</label>
+            <input type="datetime-local" id="date_janji" name="date_janji" required /><br />
+
+            <label for="month_bulan_belajar">Bulan mulai belajar:</label>
+            <input type="month" id="month_bulan_belajar" name="month_bulan_belajar" required /><br />
+
+            <label for="week_minggu_favorit">Minggu favorit:</label>
+            <input type="week" id="week_minggu_favorit" name="week_minggu_favorit" required /><br />
+
+            <label for="minat_range">Skala minat 1–5:</label>
+            <input type="range" id="minat_range" name="minat_range" min="1" max="5" value="3" /><br />
+
+            <label for="color_warna">Warna tema favorit:</label>
+            <input type="color" id="color_warna" name="color_warna" value="#000000" /><br />
+
+            <label for="file_upload">Upload foto profil:</label>
+            <input type="file" id="file_upload" name="file_upload" accept="image/*" /><br />
+
+            <label>Jenis Kelas:</label><br />
+            <input type="radio" id="offline" name="jenis_kelas" value="Offline" required />
+            <label for="offline">Offline</label><br />
+            <input type="radio" id="online" name="jenis_kelas" value="Online" required />
+            <label for="online">Online</label><br />
+
+            <label for="minat_topik">Minat Topik (pilih minimal 3):</label><br />
+            <input type="checkbox" id="html" name="minat_topik" value="HTML" />
+            <label for="html">HTML</label><br />
+            <input type="checkbox" id="css" name="minat_topik" value="CSS" />
+            <label for="css">CSS</label><br />
+            <input type="checkbox" id="git" name="minat_topik" value="Git" />
+            <label for="git">Git</label><br />
+
+            <label for="kelas_select">Kelas:</label>
+            <select id="kelas_select" name="kelas_select" required>
+                <option value="" selected>--pilih kelas--</option>
+                <option value="X">X</option>
+                <option value="XI">XI</option>
+                <option value="XII">XII</option>
+            </select><br />
+
+            <label for="catatan_singkat">Catatan singkat:</label><br />
+            <textarea id="catatan_singkat" name="catatan_singkat" rows="4" placeholder="Tuliskan catatan singkat di sini..."></textarea><br />
+        </fieldset>
+
+        <button type="submit">Kirim</button>
+        <button type="reset">Bersihkan</button>
+    </form>
+</body>
+</html>
